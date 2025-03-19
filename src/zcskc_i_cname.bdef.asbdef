@@ -1,0 +1,20 @@
+managed implementation in class zbp_cskc_i_cname unique;
+strict ( 2 );
+
+define behavior for ZCSKC_I_CNAME alias Company
+persistent table zdskc_cname
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Name;
+  mapping for zdskc_cname
+  {
+    Name = name;
+    Branch = branch;
+    Description = description;
+  }
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service def'
+define service ZSD_SKC_CENY {
+  expose ZCSKC_I_CNAME;
+}
